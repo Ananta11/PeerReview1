@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's the resolution of Pixel and Pixel XL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCU-Tn-vfc">
+                                <rect key="frame" x="27" y="192" width="320" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.16511702950656496" green="0.89495628238341973" blue="0.20519984857069984" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ii7-YU-raV">
+                                <rect key="frame" x="158" y="318" width="58" height="30"/>
+                                <state key="normal" title="Pray Tell">
+                                    <color key="titleColor" red="0.64503201655378839" green="0.89495628238341973" blue="0.83718968102099411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="PunchLine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ri-sD-vWM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.055233970207253846" green="0.055233970207253846" blue="0.055233970207253846" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uCU-Tn-vfc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="14Y-Yi-HWD"/>
+                            <constraint firstItem="ii7-YU-raV" firstAttribute="top" secondItem="uCU-Tn-vfc" secondAttribute="bottom" constant="105.5" id="OVy-Hc-LrC"/>
+                            <constraint firstItem="ii7-YU-raV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="R5e-N4-pVz"/>
+                            <constraint firstItem="ii7-YU-raV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zY5-M7-W7z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="JokeLabel" destination="uCU-Tn-vfc" id="Qjc-4c-Vsn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
